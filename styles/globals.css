@@ -1,26 +1,36 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { 
+    font-family: e-UkraineHead; 
+    src: url('../fonts/e-UkraineHead-Regular.otf');
+} 
+
+@font-face { 
+    font-family: e-Ukraine; 
+    src: url('../fonts/e-Ukraine-Regular.otf');
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face { 
+    font-family: e-Ukraine-Thin; 
+    src: url('../fonts/e-Ukraine-Thin.otf');
 }
 
-* {
-  box-sizing: border-box;
+.font-head {
+    font-family: e-UkraineHead, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.font-e {
+    font-family: e-Ukraine, sans-serif;
+}
+
+html {
+    font-family: e-Ukraine-Thin, sans-serif;
+}
+
+.ua-text {
+    background: linear-gradient(180deg, rgba(82,113,255,1) 0%, rgba(82,113,255,1) 45%, rgba(255,215,56,1) 45%, rgba(255,215,56,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
