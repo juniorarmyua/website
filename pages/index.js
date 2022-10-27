@@ -41,7 +41,7 @@ export default function Home() {
                         <h1 className='font-head font-black text-3xl lg:text-[36px] justify-self-start'>
                             Про нас<hr className='w-1/2 border-black my-4 ml-0.5'/>
                         </h1>
-                        <p className='justify-self-end ml-0.5 text-sm text-zinc-600'>
+                        <p className='justify-self-end ml-0.5 text-[0.9rem] text-zinc-600'>
                             Junior Army - волонтерська організація з грандіозними намірами. Механізація та модернізація життя громадян України - основна задача нашої команди. Ми займаємося розробкою додатків, що допоможуть людям виконувати свою роботу швидше та продуктивніше.
                         </p>
                     </div>
@@ -88,7 +88,7 @@ export default function Home() {
                         <h1 className='font-head font-black text-3xl lg:text-[36px] justify-self-start'>
                             Наша команда<hr className='w-1/2 border-black my-4 ml-0.5'/>
                         </h1>
-                        <p className='justify-self-end ml-0.5 text-sm text-zinc-600'>
+                        <p className='justify-self-end ml-0.5 text-[0.9rem] text-zinc-600'>
                             Junior Army - Команда підлітків, що займаються розробкою додатків.
                         </p>
                     </div>
