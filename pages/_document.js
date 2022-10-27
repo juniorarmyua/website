@@ -6,6 +6,7 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <title>Junior Army</title>
+                    <link rel='icon' href='logo.png'/>
                 </Head>
                 <body className='text-white bg-black transition-all'>
                     <Main/>
