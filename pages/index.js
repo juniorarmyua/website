@@ -23,7 +23,7 @@ export default function Home() {
                         <p className='pb-2 mt-32 ua-text font-head font-black text-3xl lg:text-[36px]'>
                             | Junior Army
                         </p>
-                        <p className='ml-5 text-zinc-200 font-head font-thin'>
+                        <p className='ml-5 text-zinc-200 font-thin'>
                             Нове покоління - нові погляди
                         </p>
                         <button className='mt-2 ml-5 text-zinc-200 px-5 py-2 border rounded-full hover:border-white/75'>
@@ -42,20 +42,43 @@ export default function Home() {
                             Про нас<hr className='w-1/2 border-black my-4 ml-0.5'/>
                         </h1>
                         <p className='justify-self-end ml-0.5 text-sm text-zinc-600'>
-                            Junior Army - Команда підлітків, що займаються розробкою додатків.
+                            Junior Army - Волонтерська починаюча організація з грандіозними намірами. Механізація та модернізація життя громадян України - основна задача нашої організації. Ми займаємося розробкою додатків, що допоможуть людям виконувати свою роботу швидше та продуктивніше.
                         </p>
                     </div>
                 </div>
             </div>
             <div className='grid py-16 -mx-8 lg:-mx-24 text-white'>
                 <div className='mx-8 lg:mx-24'>
-                    <div className='grid lg:grid-cols-2 py-24'>
+                    <div className='grid py-24'>
                         <h1 className='font-head font-black text-3xl lg:text-[36px] justify-self-start'>
                             Чим ми займаємося<hr className='w-1/2 border-white my-4 ml-0.5'/>
                         </h1>
-                        <p className='justify-self-end ml-0.5 text-sm text-zinc-300'>
-                            Junior Army - Команда підлітків, що займаються розробкою додатків.
-                        </p>
+                        <div className='grid lg:grid-cols-2 gap-8 mt-8'>
+                            <div className='grid bg-zinc-900 justify-items-center py-16 rounded-2xl'>
+                                <h1 className='font-head text-[72px] border-b'>UI/UX</h1>
+                                <p className='mt-4'>
+                                    Поєднуємо красу і простоту
+                                </p>
+                            </div>
+                            <div className='grid bg-zinc-900 justify-items-center py-16 rounded-2xl'>
+                                <h1 className='font-head text-[72px] border-b'>Web</h1>
+                                <p className='mt-4'>
+                                    Повністю функціональні сайти
+                                </p>
+                            </div>
+                            <div className='grid bg-zinc-900 justify-items-center py-16 rounded-2xl'>
+                                <h1 className='font-head text-[72px] border-b'>Apps</h1>
+                                <p className='mt-4'>
+                                    Мобільні та десктопні додатки
+                                </p>
+                            </div>
+                            <div className='grid bg-zinc-900 justify-items-center py-16 rounded-2xl'>
+                                <h1 className='font-head text-[72px] border-b'>Bots</h1>
+                                <p className='mt-4'>
+                                    Телеграм-боти на любий смак
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
