@@ -4,8 +4,7 @@ class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <Head>
-                    <title>Junior Army</title>
+                <Head>  
                     <link rel='icon' href='logo.png'/>
                 </Head>
                 <body className='text-white bg-black transition-all'>

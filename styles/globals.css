@@ -5,11 +5,6 @@
 @font-face { 
     font-family: e-UkraineHead; 
     src: url('../fonts/e-UkraineHead-LOGO.otf');
-} 
-
-@font-face { 
-    font-family: e-Ukraine; 
-    src: url('../fonts/e-Ukraine-Regular.otf');
 }
 
 @font-face { 
@@ -21,9 +16,6 @@
     font-family: e-UkraineHead, sans-serif;
 }
 
-.font-h {
-    font-family: e-Ukraine, sans-serif;
-}
 
 html {
     font-family: e-Ukraine-Thin, sans-serif;

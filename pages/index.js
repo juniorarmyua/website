@@ -1,19 +1,28 @@
 import Image from 'next/image'
 import logo from '../public/logo.png'
+import chat from '../public/chat.png'
+
+function scrollInfo() {
+    document.getElementById('info').scrollIntoView()
+}
+
+function scrollCommand() {
+    document.getElementById('command').scrollIntoView()
+}
 
 export default function Home() {
     return (
         <div className='mx-8 lg:mx-24'>
             <div className='lg:mx-24 lg:grid flex lg:grid-cols-2 items-center'>
                 <div className='justify-self-start'>
-                    <Image src={logo} width={100} height={100}/>
+                    <Image alt='' src={logo} width={100} height={100}/>
                 </div>
                 <div className='-mt-2 text-lg grid grid-cols-2 gap-4 font-head justify-self-end'>
-                    <button>
+                    <button onClick={scrollInfo}>
                         Про нас
                     </button>
-                    <button>
-                        Контакти
+                    <button onClick={scrollCommand}>
+                        Команда
                     </button>
                 </div>
             </div>
@@ -26,16 +35,16 @@ export default function Home() {
                         <p className='ml-5 text-zinc-200 font-thin'>
                             Нове покоління - нові погляди
                         </p>
-                        <button className='mt-2 ml-5 text-zinc-200 px-5 py-2 border rounded-full hover:border-white/75'>
+                        <button className='mt-2 ml-5 text-zinc-200 px-5 py-2 border rounded-full hover:border-white/75' onClick={scrollInfo}>
                             Дізнатися більше
                         </button>
                     </div>
                     <div className='ml-3 lg:ml-48 lg:mt-16 lg:scale-150'>
-                        <Image src={logo} width={300} height={300}/>
+                        <Image alt='' src={logo} width={300} height={300}/>
                     </div>
                 </div>
             </div>
-            <div className='grid bg-white py-16 -mx-8 lg:-mx-24 text-black'>
+            <div className='grid bg-white py-16 -mx-8 lg:-mx-24 text-black' id='info'>
                 <div className='mx-8 lg:mx-24'>
                     <div className='grid lg:grid-cols-2 py-24'>
                         <h1 className='font-head font-black text-3xl lg:text-[36px] justify-self-start'>
@@ -82,20 +91,32 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='grid bg-white py-16 -mx-8 lg:-mx-24 text-black'>
+            <div className='grid bg-white py-16 -mx-8 lg:-mx-24 text-black' id='command'>
                 <div className='mx-8 lg:mx-24'>
                     <div className='grid lg:grid-cols-2 py-24'>
-                        <h1 className='font-head font-black text-3xl lg:text-[36px] justify-self-start'>
-                            Наша команда<hr className='w-1/2 border-black my-4 ml-0.5'/>
-                        </h1>
-                        <p className='justify-self-end ml-0.5 text-[0.9rem] text-zinc-600'>
-                            Junior Army - Команда підлітків, що займаються розробкою додатків.
-                        </p>
+                        <div>
+                            <h1 className='font-head font-black text-3xl lg:text-[36px] justify-self-start'>
+                                Наша команда<hr className='w-1/2 border-black my-4 ml-0.5'/>
+                            </h1>
+                            <p className='justify-self-end ml-0.5 text-[0.9rem] text-zinc-600'>
+                                Наш колектив доброзичливий і чуйний. Підтримка один одного та затишні посиденьки у голосовому каналі – основні традиції організації Junior Army.
+                                <br/><br/>
+                                Маєш нестримне бажання допомагати нашій країні? Тобі до нас! Наша команда рада кожному, хто проявить бажання доєднатися до організації. Працюй в задоволення разом із Junior Army. 
+                            </p>
+                            <button className='mt-2 text-black px-5 py-2 border border-black rounded-full hover:border-black/75'>
+                                <a href='https://docs.google.com/forms/d/e/1FAIpQLSfujkkRCBZ1tbOiFObz12_4miPcp0OqSFtDt3pXQka5qom4fg/viewform'>
+                                    Приєднатися до команди!
+                                </a>
+                            </button>
+                        </div>
+                        <div className='mt-4 lg:-mt-12'>
+                            <Image alt='' src={chat} className='rounded-2xl lg:scale-75'/>
+                        </div>
                     </div>
                 </div>
             </div>
             <footer className='-mx-8 lg:-mx-24 flex items-center'>
-                <Image src={logo} width={100} height={100}/>
+                <Image alt='' src={logo} width={100} height={100}/>
                 <div className='text-2xl ml-4 gap-4 font-head'>
                     <p>
                         Слава <span className='slava-ukraini'>Україні!</span> <br className='lg:hidden'/>Смерть <span className='death-for-enemy'>ворогам!</span>
