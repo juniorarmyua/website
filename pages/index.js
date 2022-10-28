@@ -1,128 +1,250 @@
-import Image from 'next/image'
-import logo from '../public/logo.png'
-import chat from '../public/chat.png'
+import Image from "next/image";
+import chat from "../public/chat.webp";
 
 function scrollInfo() {
-    document.getElementById('info').scrollIntoView()
+	document.getElementById("info").scrollIntoView();
 }
 
 function scrollCommand() {
-    document.getElementById('command').scrollIntoView()
+	document.getElementById("command").scrollIntoView();
 }
 
 export default function Home() {
-    return (
-        <div className='mx-8 lg:mx-24'>
-            <div className='lg:mx-24 lg:grid flex lg:grid-cols-2 items-center'>
-                <div className='justify-self-start'>
-                    <Image alt='' src={logo} width={100} height={100}/>
-                </div>
-                <div className='-mt-2 text-lg grid grid-cols-2 gap-4 font-head justify-self-end'>
-                    <button onClick={scrollInfo}>
-                        Про нас
-                    </button>
-                    <button onClick={scrollCommand}>
-                        Команда
-                    </button>
-                </div>
-            </div>
-            <div className='text-center lg:text-left -ml-4 grid justify-items-center grid-cols-1 lg:ml-10 pb-8 lg:pb-32'>
-                <div className='lg:flex'>
-                    <div>
-                        <p className='pb-2 mt-32 ua-text font-head font-black text-3xl lg:text-[36px]'>
-                            | Junior Army
-                        </p>
-                        <p className='ml-5 text-zinc-200 font-thin'>
-                            Нове покоління - нові погляди
-                        </p>
-                        <button className='mt-2 ml-5 text-zinc-200 px-5 py-2 border rounded-full hover:border-white/75' onClick={scrollInfo}>
-                            Дізнатися більше
-                        </button>
-                    </div>
-                    <div className='ml-3 lg:ml-48 lg:mt-16 lg:scale-150'>
-                        <Image alt='' src={logo} width={300} height={300}/>
-                    </div>
-                </div>
-            </div>
-            <div className='grid bg-white py-16 -mx-8 lg:-mx-24 text-black' id='info'>
-                <div className='mx-8 lg:mx-24'>
-                    <div className='grid lg:grid-cols-2 py-24'>
-                        <h1 className='font-head font-black text-3xl lg:text-[36px] justify-self-start'>
-                            Про нас<hr className='w-1/2 border-black my-4 ml-0.5'/>
-                        </h1>
-                        <p className='justify-self-end ml-0.5 text-[0.9rem] text-zinc-600'>
-                            Junior Army - волонтерська організація з грандіозними намірами. Механізація та модернізація життя громадян України - основна задача нашої команди. Ми займаємося розробкою додатків, що допоможуть людям виконувати свою роботу швидше та продуктивніше.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div className='grid py-16 -mx-8 lg:-mx-24 text-white'>
-                <div className='mx-8 lg:mx-24'>
-                    <div className='grid py-24'>
-                        <h1 className='font-head font-black text-3xl lg:text-[36px] justify-self-start'>
-                            Чим ми займаємося<hr className='w-1/2 border-white my-4 ml-0.5'/>
-                        </h1>
-                        <div className='grid lg:grid-cols-2 gap-8 mt-8'>
-                            <div className='grid bg-zinc-900 justify-items-center py-16 rounded-2xl'>
-                                <h1 className='font-head text-[72px] border-b'>UI/UX</h1>
-                                <p className='mt-4'>
-                                    Поєднуємо красу і простоту
-                                </p>
-                            </div>
-                            <div className='grid bg-zinc-900 justify-items-center py-16 rounded-2xl'>
-                                <h1 className='font-head text-[72px] border-b'>Web</h1>
-                                <p className='mt-4'>
-                                    Повністю функціональні сайти
-                                </p>
-                            </div>
-                            <div className='grid bg-zinc-900 justify-items-center py-16 rounded-2xl'>
-                                <h1 className='font-head text-[72px] border-b'>Apps</h1>
-                                <p className='mt-4'>
-                                    Мобільні та десктопні додатки
-                                </p>
-                            </div>
-                            <div className='grid bg-zinc-900 justify-items-center py-16 rounded-2xl'>
-                                <h1 className='font-head text-[72px] border-b'>Bots</h1>
-                                <p className='mt-4'>
-                                    Телеграм-боти на любий смак
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='grid bg-white py-16 -mx-8 lg:-mx-24 text-black' id='command'>
-                <div className='mx-8 lg:mx-24'>
-                    <div className='grid lg:grid-cols-2 py-24'>
-                        <div>
-                            <h1 className='font-head font-black text-3xl lg:text-[36px] justify-self-start'>
-                                Наша команда<hr className='w-1/2 border-black my-4 ml-0.5'/>
-                            </h1>
-                            <p className='justify-self-end ml-0.5 text-[0.9rem] text-zinc-600'>
-                                Наш колектив доброзичливий і чуйний. Підтримка один одного та затишні посиденьки у голосовому каналі – основні традиції організації Junior Army.
-                                <br/><br/>
-                                Маєш нестримне бажання допомагати нашій країні? Тобі до нас! Наша команда рада кожному, хто проявить бажання доєднатися до організації. Працюй в задоволення разом із Junior Army. 
-                            </p>
-                            <button className='mt-2 text-black px-5 py-2 border border-black rounded-full hover:border-black/75'>
-                                <a href='https://docs.google.com/forms/d/e/1FAIpQLSfujkkRCBZ1tbOiFObz12_4miPcp0OqSFtDt3pXQka5qom4fg/viewform'>
-                                    Приєднатися до команди!
-                                </a>
-                            </button>
-                        </div>
-                        <div className='mt-4 lg:-mt-12'>
-                            <Image alt='' src={chat} className='rounded-2xl lg:scale-75'/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <footer className='-mx-8 lg:-mx-24 flex items-center'>
-                <Image alt='' src={logo} width={100} height={100}/>
-                <div className='text-2xl ml-4 gap-4 font-head'>
-                    <p>
-                        Слава <span className='slava-ukraini'>Україні!</span> <br className='lg:hidden'/>Смерть <span className='death-for-enemy'>ворогам!</span>
-                    </p>
-                </div>
-            </footer>
-        </div>
-    )
+	return (
+		<div className="mx-8 lg:mx-24">
+			<div className="flex items-center lg:mx-24 lg:grid lg:grid-cols-2">
+				<div className="justify-self-start">
+					<svg
+						width="100"
+						height="100"
+						viewBox="0 0 256 256"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M31.286 106.097C31.286 108.918 29.4905 110.714 27.182 110.714C25.13 110.714 23.591 109.688 23.591 109.688L20 120.461C20 120.461 23.591 123.539 30.26 123.539C37.955 123.539 44.624 116.87 44.624 106.097V86.09H31.286V106.097ZM68.224 109.944C65.9155 109.944 64.12 108.149 64.12 105.327V86.09H50.782V105.327C50.782 115.588 57.964 122.77 68.224 122.77C78.484 122.77 85.666 115.588 85.666 105.327V86.09H72.328V105.327C72.328 108.149 70.5325 109.944 68.224 109.944ZM113.871 122H128.748V86.09H115.41V101.993L106.689 86.09H91.812V122H105.15V106.097L113.871 122ZM148.234 86.09H134.896V122H148.234V86.09ZM179.008 104.045C179.008 107.636 176.443 110.201 173.365 110.201C170.287 110.201 167.722 107.636 167.722 104.045C167.722 100.454 170.287 97.889 173.365 97.889C176.443 97.889 179.008 100.454 179.008 104.045ZM193.372 104.045C193.372 93.5285 185.164 85.3205 173.365 85.3205C161.566 85.3205 153.358 93.5285 153.358 104.045C153.358 114.561 161.566 122.77 173.365 122.77C185.164 122.77 193.372 114.561 193.372 104.045ZM233.917 122L225.196 108.149C225.196 108.149 229.813 105.584 229.813 98.1455C229.813 90.707 224.683 85.577 213.397 85.577C205.702 85.577 198.52 86.09 198.52 86.09V122H211.858V110.201H212.371L218.527 122H233.917ZM211.858 100.967V95.324H213.397C215.192 95.324 216.475 96.6065 216.475 98.1455C216.475 99.6845 215.192 100.967 213.397 100.967H211.858Z"
+							fill="#5271FF"
+						/>
+						<path
+							d="M67.8015 123.89H48.3195L36.573 164H53.19L54.336 158.27H61.785L62.931 164H79.548C79.548 164 67.8588 124.119 67.8015 123.89ZM56.055 149.102L58.0605 138.788L60.066 149.102H56.055ZM123.069 164L113.328 148.529C113.328 148.529 118.485 145.664 118.485 137.355C118.485 129.047 112.755 123.317 100.149 123.317C91.5541 123.317 83.5321 123.89 83.5321 123.89V164H98.4301V150.821H99.0031L105.879 164H123.069ZM98.4301 140.507V134.204H100.149C102.155 134.204 103.587 135.636 103.587 137.355C103.587 139.074 102.155 140.507 100.149 140.507H98.4301ZM159.195 164L166.071 141.653V164H180.969V123.89H159.768L153.178 145.664L146.589 123.89H125.388V164H140.286V141.653L147.162 164H159.195ZM200.442 123.89H183.252L197.004 148.529V164H211.902V148.529L225.654 123.89H208.464L204.453 135.35L200.442 123.89Z"
+							fill="#FFD738"
+						/>
+						<rect
+							y="130.398"
+							width="256"
+							height="6"
+							transform="rotate(-3 0 130.398)"
+							fill="#FFD738"
+						/>
+						<rect
+							y="124.398"
+							width="256"
+							height="6"
+							transform="rotate(-3 0 124.398)"
+							fill="#5271FF"
+						/>
+					</svg>
+				</div>
+				<div className="font-h ml-8 -mt-2 grid grid-cols-2 gap-4 justify-self-end text-lg">
+					<button onClick={scrollInfo}>Про нас</button>
+					<button onClick={scrollCommand}>Команда</button>
+				</div>
+			</div>
+			<div className="-ml-4 grid grid-cols-1 justify-items-center pb-8 text-center lg:ml-10 lg:pb-32 lg:text-left">
+				<div className="lg:flex">
+					<div>
+						<p className="ua-text font-head mt-32 pb-2 text-3xl font-black lg:text-[36px]">
+							| Junior Army
+						</p>
+						<p className="ml-5 text-zinc-200">
+							Нове покоління - нові погляди
+						</p>
+						<button
+							className="mt-2 ml-5 rounded-full border px-5 py-2 text-zinc-200 hover:border-white/75"
+							onClick={scrollInfo}
+						>
+							Дізнатися більше
+						</button>
+					</div>
+					<div className="ml-7 lg:ml-48 lg:mt-16 lg:scale-150">
+						<svg
+							width="256"
+							height="256"
+							viewBox="0 0 256 256"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M31.286 106.097C31.286 108.918 29.4905 110.714 27.182 110.714C25.13 110.714 23.591 109.688 23.591 109.688L20 120.461C20 120.461 23.591 123.539 30.26 123.539C37.955 123.539 44.624 116.87 44.624 106.097V86.09H31.286V106.097ZM68.224 109.944C65.9155 109.944 64.12 108.149 64.12 105.327V86.09H50.782V105.327C50.782 115.588 57.964 122.77 68.224 122.77C78.484 122.77 85.666 115.588 85.666 105.327V86.09H72.328V105.327C72.328 108.149 70.5325 109.944 68.224 109.944ZM113.871 122H128.748V86.09H115.41V101.993L106.689 86.09H91.812V122H105.15V106.097L113.871 122ZM148.234 86.09H134.896V122H148.234V86.09ZM179.008 104.045C179.008 107.636 176.443 110.201 173.365 110.201C170.287 110.201 167.722 107.636 167.722 104.045C167.722 100.454 170.287 97.889 173.365 97.889C176.443 97.889 179.008 100.454 179.008 104.045ZM193.372 104.045C193.372 93.5285 185.164 85.3205 173.365 85.3205C161.566 85.3205 153.358 93.5285 153.358 104.045C153.358 114.561 161.566 122.77 173.365 122.77C185.164 122.77 193.372 114.561 193.372 104.045ZM233.917 122L225.196 108.149C225.196 108.149 229.813 105.584 229.813 98.1455C229.813 90.707 224.683 85.577 213.397 85.577C205.702 85.577 198.52 86.09 198.52 86.09V122H211.858V110.201H212.371L218.527 122H233.917ZM211.858 100.967V95.324H213.397C215.192 95.324 216.475 96.6065 216.475 98.1455C216.475 99.6845 215.192 100.967 213.397 100.967H211.858Z"
+								fill="#5271FF"
+							/>
+							<path
+								d="M67.8015 123.89H48.3195L36.573 164H53.19L54.336 158.27H61.785L62.931 164H79.548C79.548 164 67.8588 124.119 67.8015 123.89ZM56.055 149.102L58.0605 138.788L60.066 149.102H56.055ZM123.069 164L113.328 148.529C113.328 148.529 118.485 145.664 118.485 137.355C118.485 129.047 112.755 123.317 100.149 123.317C91.5541 123.317 83.5321 123.89 83.5321 123.89V164H98.4301V150.821H99.0031L105.879 164H123.069ZM98.4301 140.507V134.204H100.149C102.155 134.204 103.587 135.636 103.587 137.355C103.587 139.074 102.155 140.507 100.149 140.507H98.4301ZM159.195 164L166.071 141.653V164H180.969V123.89H159.768L153.178 145.664L146.589 123.89H125.388V164H140.286V141.653L147.162 164H159.195ZM200.442 123.89H183.252L197.004 148.529V164H211.902V148.529L225.654 123.89H208.464L204.453 135.35L200.442 123.89Z"
+								fill="#FFD738"
+							/>
+							<rect
+								y="130.398"
+								width="256"
+								height="6"
+								transform="rotate(-3 0 130.398)"
+								fill="#FFD738"
+							/>
+							<rect
+								y="124.398"
+								width="256"
+								height="6"
+								transform="rotate(-3 0 124.398)"
+								fill="#5271FF"
+							/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div
+				className="-mx-8 grid bg-white py-16 text-black lg:-mx-24"
+				id="info"
+			>
+				<div className="mx-8 lg:mx-24">
+					<div className="grid py-24 lg:grid-cols-2">
+						<h1 className="font-h justify-self-start text-3xl font-black lg:text-[36px]">
+							Про нас
+							<hr className="my-4 ml-0.5 w-1/2 border-black" />
+						</h1>
+						<p className="ml-0.5 justify-self-end text-[0.9rem] text-zinc-600">
+							Junior Army - волонтерська організація з
+							грандіозними намірами. Механізація та модернізація
+							життя громадян України - основна задача нашої
+							команди. Ми займаємося розробкою додатків, що
+							допоможуть людям виконувати свою роботу швидше та
+							продуктивніше.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div className="-mx-8 grid py-16 text-white lg:-mx-24">
+				<div className="mx-8 lg:mx-24">
+					<div className="grid py-24">
+						<h1 className="font-h justify-self-start text-3xl font-black lg:text-[36px]">
+							Чим ми займаємося
+							<hr className="my-4 ml-0.5 w-1/2 border-white" />
+						</h1>
+						<div className="mt-8 grid gap-8 lg:grid-cols-2">
+							<div className="grid justify-items-center rounded-2xl bg-zinc-900 py-16">
+								<h1 className="font-h border-b text-[72px]">
+									UI/UX
+								</h1>
+								<p className="mt-4">
+									Поєднуємо красу і простоту
+								</p>
+							</div>
+							<div className="grid justify-items-center rounded-2xl bg-zinc-900 py-16">
+								<h1 className="font-h border-b text-[72px]">
+									Web
+								</h1>
+								<p className="mt-4">
+									Повністю функціональні сайти
+								</p>
+							</div>
+							<div className="grid justify-items-center rounded-2xl bg-zinc-900 py-16">
+								<h1 className="font-h border-b text-[72px]">
+									Apps
+								</h1>
+								<p className="mt-4">
+									Мобільні та десктопні додатки
+								</p>
+							</div>
+							<div className="grid justify-items-center rounded-2xl bg-zinc-900 py-16">
+								<h1 className="font-h border-b text-[72px]">
+									Bots
+								</h1>
+								<p className="mt-4">
+									Телеграм-боти на любий смак
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				className="-mx-8 grid bg-white py-16 text-black lg:-mx-24"
+				id="command"
+			>
+				<div className="mx-8 lg:mx-24">
+					<div className="grid py-24 lg:grid-cols-2">
+						<div>
+							<h1 className="font-h justify-self-start text-3xl font-black lg:text-[36px]">
+								Наша команда
+								<hr className="my-4 ml-0.5 w-1/2 border-black" />
+							</h1>
+							<p className="ml-0.5 justify-self-end text-[0.9rem] text-zinc-600">
+								Наш колектив доброзичливий і чуйний. Підтримка
+								один одного та затишні посиденьки у голосовому
+								каналі – основні традиції організації Junior
+								Army.
+								<br />
+								<br />
+								Маєш нестримне бажання допомагати нашій країні?
+								Тобі до нас! Наша команда рада кожному, хто
+								проявить бажання доєднатися до організації.
+								Працюй в задоволення разом із Junior Army.
+							</p>
+							<button className="mt-2 rounded-full border border-black px-5 py-2 text-black hover:border-black/75">
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSfujkkRCBZ1tbOiFObz12_4miPcp0OqSFtDt3pXQka5qom4fg/viewform">
+									Приєднатися до команди!
+								</a>
+							</button>
+						</div>
+						<div className="mt-4 lg:-mt-12">
+							<Image
+								alt=""
+								src={chat}
+								className="rounded-2xl lg:scale-75"
+								loading="eager"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer className="-mx-8 flex items-center lg:-mx-24">
+				<svg
+					width="100"
+					height="100"
+					viewBox="0 0 256 256"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					className="ml-4"
+				>
+					<path
+						d="M31.286 106.097C31.286 108.918 29.4905 110.714 27.182 110.714C25.13 110.714 23.591 109.688 23.591 109.688L20 120.461C20 120.461 23.591 123.539 30.26 123.539C37.955 123.539 44.624 116.87 44.624 106.097V86.09H31.286V106.097ZM68.224 109.944C65.9155 109.944 64.12 108.149 64.12 105.327V86.09H50.782V105.327C50.782 115.588 57.964 122.77 68.224 122.77C78.484 122.77 85.666 115.588 85.666 105.327V86.09H72.328V105.327C72.328 108.149 70.5325 109.944 68.224 109.944ZM113.871 122H128.748V86.09H115.41V101.993L106.689 86.09H91.812V122H105.15V106.097L113.871 122ZM148.234 86.09H134.896V122H148.234V86.09ZM179.008 104.045C179.008 107.636 176.443 110.201 173.365 110.201C170.287 110.201 167.722 107.636 167.722 104.045C167.722 100.454 170.287 97.889 173.365 97.889C176.443 97.889 179.008 100.454 179.008 104.045ZM193.372 104.045C193.372 93.5285 185.164 85.3205 173.365 85.3205C161.566 85.3205 153.358 93.5285 153.358 104.045C153.358 114.561 161.566 122.77 173.365 122.77C185.164 122.77 193.372 114.561 193.372 104.045ZM233.917 122L225.196 108.149C225.196 108.149 229.813 105.584 229.813 98.1455C229.813 90.707 224.683 85.577 213.397 85.577C205.702 85.577 198.52 86.09 198.52 86.09V122H211.858V110.201H212.371L218.527 122H233.917ZM211.858 100.967V95.324H213.397C215.192 95.324 216.475 96.6065 216.475 98.1455C216.475 99.6845 215.192 100.967 213.397 100.967H211.858Z"
+						fill="#5271FF"
+					/>
+					<path
+						d="M67.8015 123.89H48.3195L36.573 164H53.19L54.336 158.27H61.785L62.931 164H79.548C79.548 164 67.8588 124.119 67.8015 123.89ZM56.055 149.102L58.0605 138.788L60.066 149.102H56.055ZM123.069 164L113.328 148.529C113.328 148.529 118.485 145.664 118.485 137.355C118.485 129.047 112.755 123.317 100.149 123.317C91.5541 123.317 83.5321 123.89 83.5321 123.89V164H98.4301V150.821H99.0031L105.879 164H123.069ZM98.4301 140.507V134.204H100.149C102.155 134.204 103.587 135.636 103.587 137.355C103.587 139.074 102.155 140.507 100.149 140.507H98.4301ZM159.195 164L166.071 141.653V164H180.969V123.89H159.768L153.178 145.664L146.589 123.89H125.388V164H140.286V141.653L147.162 164H159.195ZM200.442 123.89H183.252L197.004 148.529V164H211.902V148.529L225.654 123.89H208.464L204.453 135.35L200.442 123.89Z"
+						fill="#FFD738"
+					/>
+					<rect
+						y="130.398"
+						width="256"
+						height="6"
+						transform="rotate(-3 0 130.398)"
+						fill="#FFD738"
+					/>
+					<rect
+						y="124.398"
+						width="256"
+						height="6"
+						transform="rotate(-3 0 124.398)"
+						fill="#5271FF"
+					/>
+				</svg>
+				<div className="font-h ml-4 gap-4 text-2xl">
+					<p>
+						Слава <span className="slava-ukraini">Україні!</span>{" "}
+						<br className="lg:hidden" />
+						Смерть <span className="death-for-enemy">ворогам!</span>
+					</p>
+				</div>
+			</footer>
+		</div>
+	);
 }

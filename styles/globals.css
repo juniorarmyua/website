@@ -2,69 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face { 
-    font-family: e-UkraineHead; 
-    src: url('../fonts/e-UkraineHead-LOGO.otf');
+@font-face {
+	font-family: e-UkraineHead-LOGO;
+	src: url("../fonts/e-UkraineHead-LOGO.otf");
+	font-display: swap;
 }
 
-@font-face { 
-    font-family: e-Ukraine-Thin; 
-    src: url('../fonts/e-Ukraine-Thin.otf');
+@font-face {
+	font-family: e-Ukraine-Light;
+	src: url("../fonts/e-Ukraine-Light.otf");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: e-UkraineHead-Regular;
+	src: url("../fonts/e-UkraineHead-Regular.otf");
+	font-display: swap;
 }
 
 .font-head {
-    font-family: e-UkraineHead, sans-serif;
+	font-family: e-UkraineHead-LOGO, sans-serif;
 }
 
+.font-h {
+	font-family: e-UkraineHead-Regular, sans-serif;
+}
 
 html {
-    font-family: e-Ukraine-Thin, sans-serif;
+	font-family: e-Ukraine-Light, sans-serif;
 }
 
 .ua-text {
-    background: linear-gradient(180deg, rgba(82,113,255,1) 0%, rgba(82,113,255,1) 45%, rgba(255,215,56,1) 45%, rgba(255,215,56,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background: linear-gradient(
+		180deg,
+		rgba(82, 113, 255, 1) 0%,
+		rgba(82, 113, 255, 1) 45%,
+		rgba(255, 215, 56, 1) 45%,
+		rgba(255, 215, 56, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .slava-ukraini {
-    background: linear-gradient(180deg, rgba(82,113,255,1) 0%, rgba(82,113,255,1) 55%, rgba(255,215,56,1) 55%, rgba(255,215,56,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background: linear-gradient(
+		180deg,
+		rgba(82, 113, 255, 1) 0%,
+		rgba(82, 113, 255, 1) 55%,
+		rgba(255, 215, 56, 1) 55%,
+		rgba(255, 215, 56, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .death-for-enemy {
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(82,113,255,1) 49%, rgba(82,113,255,1) 66%, rgba(255,82,82,1) 66%, rgba(255,82,82,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 49%,
+		rgba(82, 113, 255, 1) 49%,
+		rgba(82, 113, 255, 1) 66%,
+		rgba(255, 82, 82, 1) 66%,
+		rgba(255, 82, 82, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+	width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #000;
+	background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #111;
-    border-radius: 7px;
-    border: 4px solid transparent;
-    background-clip: padding-box;
+	background: #111;
+	border-radius: 7px;
+	border: 4px solid transparent;
+	background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #222;
-    border-radius: 7px;
-    border: 3px solid transparent;
-    background-clip: padding-box;
+	background: #222;
+	border-radius: 7px;
+	border: 3px solid transparent;
+	background-clip: padding-box;
 }
 
 ::-moz-selection {
-    background: #55555550;
+	background: #55555550;
 }
-  
+
 ::selection {
-    background: #55555550;
+	background: #55555550;
 }
