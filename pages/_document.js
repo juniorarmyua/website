@@ -17,6 +17,10 @@ class MyDocument extends Document {
 						name="keywords"
 						content="Junior, Army, Junior Army, Junior-Army, junior, army, junior-army, junior-army.pp.ua, www.junior-army.pp.ua, UI, UX, UI/UX, ui, ux, ui/ux, Web, web, Bots, bots, Apps, apps, electron.js, react-native"
 					/>
+					<meta
+						name="og:image"
+						content="https://junior-army.pp.ua/logo.png"
+					/>
 				</Head>
 				<body className="bg-black text-white transition-all">
 					<Main />

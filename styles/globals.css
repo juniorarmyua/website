@@ -9,8 +9,8 @@
 }
 
 @font-face {
-	font-family: e-Ukraine-Light;
-	src: url("../fonts/e-Ukraine-Light.otf");
+	font-family: e-Ukraine-Thin;
+	src: url("../fonts/e-Ukraine-Thin.otf");
 	font-display: swap;
 }
 
@@ -24,12 +24,12 @@
 	font-family: e-UkraineHead-LOGO, sans-serif;
 }
 
-.font-h {
-	font-family: e-UkraineHead-Regular, sans-serif;
+html {
+	font-family: e-Ukraine-Thin, sans-serif;
 }
 
-html {
-	font-family: e-Ukraine-Light, sans-serif;
+.font-h {
+	font-family: e-UkraineHead-Regular, sans-serif;
 }
 
 .ua-text {
