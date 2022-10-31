@@ -2,11 +2,11 @@ import Image from "next/image";
 import chat from "../public/chat.webp";
 
 function scrollInfo() {
-	document.getElementById("info").scrollIntoView();
+	document.getElementById("info").scrollIntoView({ behavior: "smooth" })
 }
 
 function scrollCommand() {
-	document.getElementById("command").scrollIntoView();
+	document.getElementById("command").scrollIntoView({ behavior: "smooth" })
 }
 
 export default function Home() {
